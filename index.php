@@ -1,12 +1,11 @@
 <?		session_start();
 
-//	hide picture
-isset($_GET['h'])||$hid4a?$h=1:$h=0;
+isset($_GET['h'])||$hid4a?$h=1:$h=0;			      		//	hide picture
 if($h){require_once('hid4a.php'); exit;}
 
 isset($_GET['r'])?$r=floor(abs($_GET['r'])):$r=0;		//	reduce size
-isset($_GET['c'])?$c=1:$c=0;							          //	capital letters
-isset($_GET['s'])||$sign?$s=1:$s=0;						      //	sign a picture
+isset($_GET['c'])?$c=1:$c=0;				          			//	capital letters
+isset($_GET['s'])||$sign?$s=1:$s=0;			      			//	sign a picture
 
 $ini=array(0=>3, $r, $c, $s);
 require_once('class.kap4a.php');
