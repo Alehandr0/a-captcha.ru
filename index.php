@@ -1,4 +1,4 @@
-<?		session_start();
+<?  session_start();
 
 isset($_GET['h'])||$hid4a?$h=1:$h=0;                    //	hide picture
 if($h){require_once('hid4a.php'); exit;}
