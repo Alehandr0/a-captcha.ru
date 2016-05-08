@@ -16,6 +16,6 @@ if(!isset($_SESSION['kap4a'])||!isset($_SESSION['Ol']))
 <?$lO=$_SESSION['Ol']=$_SESSION['nam4a']?>
 <p><input name=<?=$lO?> type=text size=16 maxlength=10></p>
 <p><input type=submit value='  Подтвердить ввод  '></p>
-<?=$n?"Совпадение":"Ошибка"?>
+<?="Результат ввода : "?><?=$n?"СОВПАДЕНИЕ":"ОШИБКА"?>
 </form>
 </center>
