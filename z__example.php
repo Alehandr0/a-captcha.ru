@@ -9,6 +9,7 @@ if(!isset($_SESSION['kap4a'])||!isset($_SESSION['Ol']))
     $hid4a=1; require_once("index.php"); exit;
 }
 ?>
+<br><br><br>
 <center>
 <form method=POST>
 <p>Введите текст, показанный ниже:</p>
@@ -16,6 +17,6 @@ if(!isset($_SESSION['kap4a'])||!isset($_SESSION['Ol']))
 <?$lO=$_SESSION['Ol']=$_SESSION['nam4a']?>
 <p><input name=<?=$lO?> type=text size=16 maxlength=10></p>
 <p><input type=submit value='  Подтвердить ввод  '></p>
-<?="Результат ввода : "?><?=$n?"СОВПАДЕНИЕ":"ОШИБКА"?>
+<?="Результат ввода : ".($n?"СОВПАДЕНИЕ":"ОШИБКА")?>
 </form>
 </center>
