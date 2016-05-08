@@ -1,12 +1,12 @@
-<?	session_start();
-	$Ol=$_SESSION['Ol'];
-	$l1=strtolower($_POST[$Ol]);	
+<?  session_start();
+    $Ol=$_SESSION['Ol'];
+    $l1=strtolower($_POST[$Ol]);	
 
 if(count($_POST)>0)isset($_SESSION['kap4a'])&&$_SESSION['kap4a']===$l1?$n=1:$n=0;
 if(!isset($_SESSION['kap4a'])||!isset($_SESSION['Ol']))
   {
-	echo"<meta http-equiv=Refresh content='0; url=http://{$_SERVER['HTTP_HOST']}/kap4a/z__example.php'>";
-	$hid4a=1; require_once("index.php"); exit;
+    echo"<meta http-equiv=Refresh content='0; url=http://{$_SERVER['HTTP_HOST']}/kap4a/z__example.php'>";
+    $hid4a=1; require_once("index.php"); exit;
 }
 ?>
 <form method=POST>
