@@ -5,10 +5,11 @@
 if(count($_POST)>0)isset($_SESSION['kap4a'])&&$_SESSION['kap4a']===$l1?$n=1:$n=0;
 if(!isset($_SESSION['kap4a'])||!isset($_SESSION['Ol']))
   {
-    echo"<meta http-equiv=Refresh content='0; url=http://{$_SERVER['HTTP_HOST']}/kap4a/z__example.php'>";
+    echo"<meta http-equiv=Refresh content='0; url=http://{$_SERVER['HTTP_HOST']}/z__example.php'>";
     $hid4a=1; require_once("index.php"); exit;
 }
 ?>
+<center>
 <form method=POST>
 <p>Введите текст, показанный ниже:</p>
 <p><img src="http://<?=$_SERVER['HTTP_HOST']?>/kap4a/index.php?s&c&r=5"></p>
@@ -17,3 +18,4 @@ if(!isset($_SESSION['kap4a'])||!isset($_SESSION['Ol']))
 <p><input type=submit value='  Подтвердить ввод  '></p>
 <?=$n?"Совпадение":"Ошибка"?>
 </form>
+</center>
