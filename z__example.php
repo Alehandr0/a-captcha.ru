@@ -1,6 +1,6 @@
 <?	session_start();
-		$Ol=$_SESSION['Ol'];
-		$l1=strtolower($_POST[$Ol]);	
+	$Ol=$_SESSION['Ol'];
+	$l1=strtolower($_POST[$Ol]);	
 
 if(count($_POST)>0)isset($_SESSION['kap4a'])&&$_SESSION['kap4a']===$l1?$n=1:$n=0;
 if(!isset($_SESSION['kap4a'])||!isset($_SESSION['Ol']))
