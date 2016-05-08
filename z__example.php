@@ -2,7 +2,7 @@
     $Ol=$_SESSION['Ol'];
     $l1=strtolower($_POST[$Ol]);	
 
-if(count($_POST)>0)isset($_SESSION['kap4a'])&&$_SESSION['kap4a']===$l1?$n=1:$n=0;
+if(count($_POST)>0)$n=isset($_SESSION['kap4a'])&&$_SESSION['kap4a']===$l1;
 if(!isset($_SESSION['kap4a'])||!isset($_SESSION['Ol']))
   {
     echo"<meta http-equiv=Refresh content='0; url=http://{$_SERVER['HTTP_HOST']}/z__example.php'>";
