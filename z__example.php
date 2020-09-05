@@ -13,7 +13,7 @@ if(!isset($_SESSION['kap4a'])||!isset($_SESSION['Ol']))
 <center>
 <form method=POST>
 <p>Введите текст, показанный ниже:</p>
-<p><img src="http://<?=$_SERVER['HTTP_HOST']?>/kap4a/index.php?s&c&r=5"></p>
+<p><img src="http://<?=$_SERVER['HTTP_HOST']?>/index.php?s&c&r=5"></p>
 <?$lO=$_SESSION['Ol']=$_SESSION['nam4a']?>
 <p><input name=<?=$lO?> type=text size=16 maxlength=10></p>
 <p><input type=submit value='  Подтвердить ввод  '></p>
